@@ -33,7 +33,7 @@ print("\n  5°  4°  3°  2°  1°")
 print(velocistas)
 
 G=nx.DiGraph()
-G.add_edges_from([('78','65'),('65','89')])
+G.add_edges_from([('1','2'),('2','3'),('3','4'),('4','5')])
 pos=nx.spring_layout(G)
 nx.draw_networkx_nodes(G,pos,node_size=500)
 nx.draw_networkx_edges(G,pos,edgelist=G.edges(),edge_color='black')
